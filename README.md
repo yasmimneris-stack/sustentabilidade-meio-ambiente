@@ -48,9 +48,7 @@ sustentabilidade-meio-ambiente/
 
 ## 🌐 Link do Projeto Publicado
 
-> Substituir pelo link real após publicar no GitHub Pages ou Vercel:
->
-> `https://SEU-USUARIO.github.io/SEU-REPOSITORIO/`
+> `https://yasmimneris-stack.github.io/sustentabilidade-meio-ambiente/`
 
 Esse mesmo link também está declarado na seção **"Sobre o Projeto"** dentro do próprio site.
 
