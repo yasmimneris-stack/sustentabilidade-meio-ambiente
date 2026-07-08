@@ -1,0 +1,338 @@
+/* ==========================================
+   VARIÁVEIS DE COR (paleta do projeto)
+   Identidade visual em tons de azul/teal,
+   remetendo a água e céu limpo.
+   ========================================== */
+:root {
+  --azul-profundo: #0b3d4c;
+  --azul-medio: #1c7293;
+  --azul-claro: #9fd8cb;
+  --areia: #f2ece1;
+  --branco: #ffffff;
+  --texto-escuro: #1c2b2d;
+  --alerta: #d9534f;
+}
+
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background-color: var(--areia);
+  color: var(--texto-escuro);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ==========================================
+   CABEÇALHO
+   ========================================== */
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--azul-profundo);
+  color: var(--branco);
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito hover para guiar a atenção do usuário */
+.menu a:hover {
+  background-color: var(--azul-claro);
+  color: var(--azul-profundo);
+}
+
+.botoes-acessibilidade button {
+  background-color: var(--azul-medio);
+  color: var(--branco);
+  border: none;
+  padding: 0.4rem 0.7rem;
+  margin-left: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.botoes-acessibilidade button:hover {
+  background-color: var(--azul-claro);
+  color: var(--azul-profundo);
+  transform: scale(1.08);
+}
+
+/* ==========================================
+   SEÇÃO HERO (INÍCIO)
+   ========================================== */
+.hero {
+  background: linear-gradient(135deg, var(--azul-medio), var(--azul-profundo));
+  color: var(--branco);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.form-saudacao {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.form-saudacao label {
+  font-weight: bold;
+}
+
+.form-saudacao input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  width: 220px;
+  max-width: 90%;
+}
+
+.form-saudacao button {
+  background-color: var(--alerta);
+  color: var(--branco);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-saudacao button:hover {
+  background-color: var(--azul-claro);
+  color: var(--azul-profundo);
+}
+
+.mensagem-saudacao {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* ==========================================
+   SEÇÕES GERAIS
+   ========================================== */
+.secao {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.secao h2 {
+  color: var(--azul-profundo);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Cards de atitudes sustentáveis usando Grid */
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: var(--branco);
+  border-left: 5px solid var(--azul-medio);
+  padding: 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: var(--azul-profundo);
+  margin-bottom: 0.5rem;
+}
+
+/* Seção de destaque (calculadora) */
+.secao-destaque {
+  background-color: var(--azul-claro);
+  border-radius: 8px;
+}
+
+.caixa-calculadora {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.caixa-calculadora input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--azul-medio);
+  width: 150px;
+}
+
+.caixa-calculadora button {
+  background-color: var(--azul-profundo);
+  color: var(--branco);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.caixa-calculadora button:hover {
+  background-color: var(--alerta);
+}
+
+.resultado {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--azul-profundo);
+}
+
+/* Jogo de separação de lixo */
+.painel-jogo {
+  text-align: center;
+  background-color: var(--branco);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-atual {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.lixeiras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.lixeira {
+  border: none;
+  padding: 0.7rem 1.1rem;
+  border-radius: 6px;
+  background-color: var(--azul-claro);
+  color: var(--azul-profundo);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.lixeira:hover {
+  transform: scale(1.06);
+  background-color: var(--azul-medio);
+  color: var(--branco);
+}
+
+.placar {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--azul-profundo);
+}
+
+.feedback {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  min-height: 1.4rem;
+}
+
+.secao-sobre {
+  text-align: center;
+}
+
+/* ==========================================
+   RODAPÉ
+   ========================================== */
+.rodape {
+  background-color: var(--azul-profundo);
+  color: var(--branco);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ==========================================
+   MODO ESCURO (ativado via JS)
+   ========================================== */
+body.modo-escuro {
+  background-color: #10181a;
+  color: #dfece9;
+}
+
+body.modo-escuro .card,
+body.modo-escuro .painel-jogo {
+  background-color: #1e2b2d;
+  color: #dfece9;
+}
+
+body.modo-escuro .secao-destaque {
+  background-color: #24474f;
+}
+
+/* ==========================================
+   RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================== */
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    justify-content: center;
+    margin-top: 0.8rem;
+  }
+
+  .grade-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .form-saudacao input {
+    width: 100%;
+  }
+}

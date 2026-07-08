@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustentabilidade e Meio Ambiente</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho e menu de navegação -->
+  <header class="cabecalho">
+    <div class="logo">🌍 Planeta em Foco</div>
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#sobre-tema">O Tema</a>
+      <a href="#atitudes">Atitudes</a>
+      <a href="#pegada">Pegada de Carbono</a>
+      <a href="#reciclagem">Reciclagem</a>
+      <a href="#sobre">Sobre o Projeto</a>
+    </nav>
+    <!-- Botões de acessibilidade -->
+    <div class="botoes-acessibilidade">
+      <button id="btnModoEscuro" title="Alternar modo escuro">🌙</button>
+      <button id="btnDiminuirFonte" title="Diminuir fonte">A-</button>
+      <button id="btnAumentarFonte" title="Aumentar fonte">A+</button>
+    </div>
+  </header>
+
+  <!-- Seção principal / boas-vindas -->
+  <section id="inicio" class="hero">
+    <div class="hero-texto">
+      <h1>Sustentabilidade e Meio Ambiente</h1>
+      <p>Pequenas atitudes, hoje, para um planeta mais equilibrado amanhã.</p>
+
+      <!-- Formulário de saudação personalizada -->
+      <form id="formSaudacao" class="form-saudacao">
+        <label for="nomeUsuario">Como você se chama?</label>
+        <input type="text" id="nomeUsuario" placeholder="Digite seu nome" required>
+        <button type="submit">Começar</button>
+      </form>
+      <p id="mensagemSaudacao" class="mensagem-saudacao"></p>
+    </div>
+  </section>
+
+  <!-- Seção sobre o tema -->
+  <section id="sobre-tema" class="secao">
+    <h2>O que é Sustentabilidade?</h2>
+    <p>
+      Sustentabilidade é a capacidade de suprir as necessidades da geração atual sem
+      comprometer a capacidade das gerações futuras de suprirem as próprias necessidades.
+      Envolve o uso consciente dos recursos naturais, a redução do desperdício e o cuidado
+      com o ar, a água, o solo e todos os seres vivos que dependem do planeta para sobreviver.
+    </p>
+  </section>
+
+  <!-- Seção de atitudes sustentáveis (cards) -->
+  <section id="atitudes" class="secao">
+    <h2>Atitudes que Fazem a Diferença</h2>
+    <div class="grade-cards">
+
+      <article class="card">
+        <h3>💡 Energia Consciente</h3>
+        <p>Trocar lâmpadas por modelos de LED e desligar aparelhos que não estão em uso reduz o consumo de energia.</p>
+      </article>
+
+      <article class="card">
+        <h3>🚰 Economia de Água</h3>
+        <p>Banhos mais curtos e torneiras fechadas durante a escovação evitam o desperdício de milhares de litros por ano.</p>
+      </article>
+
+      <article class="card">
+        <h3>🛍️ Consumo Consciente</h3>
+        <p>Comprar apenas o necessário e escolher produtos duráveis reduz a geração de lixo e a exploração de recursos.</p>
+      </article>
+
+      <article class="card">
+        <h3>♻️ Separação do Lixo</h3>
+        <p>Separar corretamente materiais recicláveis facilita a reutilização e diminui o volume enviado aos aterros.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Calculadora interativa de pegada de carbono -->
+  <section id="pegada" class="secao secao-destaque">
+    <h2>Calculadora Simples de Pegada de Carbono</h2>
+    <p>Informe quantos quilômetros você anda de carro por semana e veja uma estimativa de CO₂ emitido.</p>
+
+    <div class="caixa-calculadora">
+      <label for="kmSemana">Km percorridos de carro por semana:</label>
+      <input type="number" id="kmSemana" min="0" placeholder="Ex: 80">
+      <button id="btnCalcular">Calcular</button>
+    </div>
+
+    <p id="resultadoCalculo" class="resultado"></p>
+  </section>
+
+  <!-- Jogo rápido de separação de lixo -->
+  <section id="reciclagem" class="secao">
+    <h2>Jogo Rápido: Em Qual Lixeira Vai?</h2>
+    <p>Clique na lixeira correta para cada item. Sua pontuação é contada automaticamente.</p>
+
+    <div class="painel-jogo">
+      <p class="item-atual">Item: <span id="itemAtual">Garrafa PET</span></p>
+
+      <div class="lixeiras">
+        <button class="lixeira" data-tipo="plastico">🟥 Plástico</button>
+        <button class="lixeira" data-tipo="papel">🟦 Papel</button>
+        <button class="lixeira" data-tipo="vidro">🟩 Vidro</button>
+        <button class="lixeira" data-tipo="metal">🟨 Metal</button>
+      </div>
+
+      <p class="placar">Pontuação: <span id="pontuacao">0</span></p>
+      <p id="feedbackJogo" class="feedback"></p>
+    </div>
+  </section>
+
+  <!-- Seção sobre o projeto (obrigatória pelo edital) -->
+  <section id="sobre" class="secao secao-sobre">
+    <h2>Sobre o Projeto</h2>
+    <p>
+      Este site foi desenvolvido como projeto para o Concurso Agrinho 2026, com o tema
+      "Sustentabilidade e meio ambiente". O objetivo é apresentar, de forma leve e
+      interativa, atitudes simples do dia a dia que ajudam a preservar o planeta.
+    </p>
+    <p>
+      🔗 Link do projeto publicado (GitHub Pages/Vercel):
+      <a href="#" target="_blank">cole aqui o link do seu site publicado</a>
+    </p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>Projeto desenvolvido para o Concurso Agrinho 2026 · #agrinho2026</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
